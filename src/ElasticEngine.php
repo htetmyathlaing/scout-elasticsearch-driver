@@ -362,4 +362,25 @@ class ElasticEngine extends Engine
             ->orderBy($model->getScoutKeyName())
             ->unsearchable();
     }
+    
+    /**
+     * {@inheritdoc}
+     */
+    public function lazyMap(Builder $builder, $results, $model)
+    {
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public  function createIndex($name, array $options = [])
+    {
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public  function deleteIndex($name)
+    {
+    }
 }
